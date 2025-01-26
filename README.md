@@ -12,6 +12,7 @@
 
 - Poste une procédure au format markdown permettant pas à pas d'obtenir cette configuration ainsi que les tests associés
 
-**facile à lire et à écrire
-**. Un document formaté selon Markdown devrait pouvoir être publié comme tel, en texte, sans donner l’impression qu’il a été marqué par des balises ou des instructions de formatage.
+**facile à lire et à écrire**
+
+**. Un document formaté selon Markdown devrait pouvoir être publié comme tel, en texte, sans donner l’impression qu’il a été marqué par des balises ou des instructions de formatage.**
 
