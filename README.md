@@ -1,10 +1,34 @@
 # dhcp-linux
 
+***https://www.it-connect.fr/configurer-adresse-ip-statique-netplan-ubuntu-ou-debian/***
+
 - Configure la carte réseau de ta machine virtuelle en Réseau Interne
+**Sur Ubuntu, la configuration réseau se fait principalement via Netplan pour les versions récentes. Nous allons modifier le fichier de configuration Netplan pour définir notre adresse IP statique.**
+
+**Ouvrez un terminal et exécutez la commande suivante pour éditer le fichier de configuration (sous Debian, ce fichier doit être créé) :**
+
+***sudo nano /etc/netplan/50-cloud-init.yaml***
+
+![chemin adreese ip](https://github.com/KAOUTARBAH/DHCP-server/blob/main/images/chemin-add-ip.png)
+
+![config adreese ip](https://github.com/KAOUTARBAH/DHCP-server/blob/main/images/adressIP.png)
+
+Puis, nous allons modifier les permissions sur ce fichier de configuration.
+Voici la commande à exécuter :
+sudo chmod 600 /etc/netplan/50-cloud-init.yaml
+
+![config adreese ip](https://github.com/KAOUTARBAH/DHCP-server/blob/main/images/droits.png)
+
+
 
 - Configure l'interface réseau du serveur
 
 - Configure le service DHCP et met en place une adresse statique par adresse MAC pour un client particulier
+**Exécutez la commande ci-dessous pour installer le package serveur DCHP**
+![install dhcp](https://github.com/KAOUTARBAH/DHCP-server/blob/main/images/install-dhcp.png)
+
+**Une fois l'installation terminée, éditez le fichier /etc/default/isc-dhcp-server pour définir les interfaces que DHCPD doit utiliser pour traiter les requêtes DHCP, avec l'option INTERFACES.**
+![config fichier dhcp](https://github.com/KAOUTARBAH/DHCP-server/blob/main/images/config-fichier-dhcp.png)
 
 - Mettre en place une attribution statique pour une machine cliente particulière dont l'adresse MAC permet d'obtenir l'adresse 172.20.0.10
 
