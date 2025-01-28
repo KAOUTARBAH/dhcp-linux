@@ -33,10 +33,13 @@ Pour afficher et vérifier votre nouvelle configuration réseau, vous pouvez uti
 - sudo netplan get
 - sudo netplan status ens0s3
 - sudo netplan status --all
+- ip a show ens0s3
 
 ![vérifier adresse ip get](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/netplan-get.png)
 ![vérifier adresse ip ens0s3](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/netplan-enp0s3.png)
 ![vérifier adresse ip all](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/NETPLAN-ALL.png)
+![vérifier adresse ip a ](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/ip-a.png)
+
 
 - Configure l'interface réseau du serveur
 
