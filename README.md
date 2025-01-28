@@ -43,12 +43,30 @@ Pour afficher et vérifier votre nouvelle configuration réseau, vous pouvez uti
 
 - Configure l'interface réseau du serveur
 
-- Configure le service DHCP et met en place une adresse statique par adresse MAC pour un client particulier
 **Exécutez la commande ci-dessous pour installer le package serveur DCHP**
 ![install dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/install-dhcp.png)
 
 **Une fois l'installation terminée, éditez le fichier /etc/default/isc-dhcp-server pour définir les interfaces que DHCPD doit utiliser pour traiter les requêtes DHCP, avec l'option INTERFACES.**
-![config fichier dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/config-fichier-dhcp.png)
+![config fichier dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/config-fich-dhcp.png)
+
+- Configure le service DHCP et met en place une adresse statique par adresse MAC pour un client particulier
+
+**Le fichier de configuration DHCP principal est /etc/dhcp/dhcpd.conf, vous devez ajouter toutes les informations de votre réseau à envoyer aux clients ici**
+
+***sudo vi /etc/dhcp/dhcpd.conf***
+
+![config bail dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/configbail.png)
+
+![la plage dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/palgedhcp.png)
+
+**démarrez le service DHCP**
+    sudo service isc-dhcp-server.service start 
+    sudo service isc-dhcp-server.service enable
+
+![démarrez dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/demarrerServiceDhcp.png)
+
+
+
 
 - Mettre en place une attribution statique pour une machine cliente particulière dont l'adresse MAC permet d'obtenir l'adresse 172.20.0.10
 
