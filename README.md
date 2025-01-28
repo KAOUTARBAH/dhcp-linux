@@ -11,7 +11,7 @@
 
 ![chemin adreese ip](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/chemin-add-ip.png)
 
-![config adreese ip](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/adressIP.png)
+![config adreese ip](https:/sudo/github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/adressIP.png)
 
 Puis, nous allons modifier les permissions sur ce fichier de configuration.
 Voici la commande à exécuter :
@@ -64,6 +64,10 @@ Pour afficher et vérifier votre nouvelle configuration réseau, vous pouvez uti
     sudo service isc-dhcp-server.service enable
 
 ![démarrez dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/demarrerServiceDhcp.png)
+
+Ensuite, n'oubliez pas d'autoriser le service DHCP (le démon DHCPD écoute sur le port 67/UDP) sur le pare-feu comme ci-dessous :
+
+![autriser port 67](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/autoriserPort.png)
 
 
 
