@@ -19,7 +19,24 @@ sudo chmod 600 /etc/netplan/50-cloud-init.yaml
 
 ![adresse ip](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/droits.png)
 
+***Appliquer la configuration Netplan***
 
+Utilisez les commandes suivantes pour générer la configuration et l'appliquer auprès du gestionnaire de réseau du système :
+
+***sudo netplan generate***
+***sudo netplan apply***
+![active @ ip](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/activer-add.png)
+
+**vérifier la configuration**
+Pour afficher et vérifier votre nouvelle configuration réseau, vous pouvez utiliser les options spécifiques de Netplan, à la place de la traditionnelle commande "ip a". Voici plusieurs commandes pour afficher la configuration complète ou celle d'une carte réseau spécifique.
+
+- sudo netplan get
+- sudo netplan status ens0s3
+- sudo netplan status --all
+
+![vérifier adresse ip get](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/netplan-get.png)
+![vérifier adresse ip ens0s3](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/netplan-enp0s3.png)
+![vérifier adresse ip all](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/NETPLAN-AL.png)
 
 - Configure l'interface réseau du serveur
 
