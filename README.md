@@ -36,7 +36,7 @@ Pour afficher et vérifier votre nouvelle configuration réseau, vous pouvez uti
 
 ![vérifier adresse ip get](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/netplan-get.png)
 ![vérifier adresse ip ens0s3](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/netplan-enp0s3.png)
-![vérifier adresse ip all](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/NETPLAN-AL.png)
+![vérifier adresse ip all](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/NETPLAN-ALL.png)
 
 - Configure l'interface réseau du serveur
 
