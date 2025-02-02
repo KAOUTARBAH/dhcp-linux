@@ -11,7 +11,8 @@
 
 ![chemin adreese ip](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/chemin-add-ip.png)
 
-![config adreese ip](https:/sudo/github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/addresseIp.png)
+![config adreese ip]((https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/addresseIp.png)
+
 
 Puis, nous allons modifier les permissions sur ce fichier de configuration.
 Voici la commande à exécuter :
