@@ -60,18 +60,17 @@ Pour afficher et vérifier votre nouvelle configuration réseau, vous pouvez uti
 
 ![la plage dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/palgedhcp.png)
 
-**démarrez le service DHCP**
-    sudo service isc-dhcp-server.service start 
-    sudo service isc-dhcp-server.service enable
+**Redémarrer le service DHCP**
+sudo systemctl restart isc-dhcp-server
+Vérifier son état:
+sudo systemctl status isc-dhcp-server
 
-![démarrez dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/demarrerServiceDhcp.png)
-
-Ensuite, n'oubliez pas d'autoriser le service DHCP (le démon DHCPD écoute sur le port 67/UDP) sur le pare-feu comme ci-dessous :
-
-![autriser port 67](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/autoriserPort.png)
+![restart dhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/restartDhcp.png)    
 
 
+# Configuration et test du client windows 
 
+![adressecltdhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/restartDhcp.png)    
 
 - Mettre en place une attribution statique pour une machine cliente particulière dont l'adresse MAC permet d'obtenir l'adresse 172.20.0.10
 
