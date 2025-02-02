@@ -11,7 +11,7 @@
 
 ![chemin adreese ip](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/chemin-add-ip.png)
 
-![config adreese ip](https:/sudo/github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/adressIP.png)
+![config adreese ip](https:/sudo/github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/addresseIp.png)
 
 Puis, nous allons modifier les permissions sur ce fichier de configuration.
 Voici la commande à exécuter :
@@ -31,9 +31,9 @@ Utilisez les commandes suivantes pour générer la configuration et l'appliquer 
 Pour afficher et vérifier votre nouvelle configuration réseau, vous pouvez utiliser les options spécifiques de Netplan, à la place de la traditionnelle commande "ip a". Voici plusieurs commandes pour afficher la configuration complète ou celle d'une carte réseau spécifique.
 
 - sudo netplan get
-- sudo netplan status ens0s3
+- sudo netplan status enp0s3
 - sudo netplan status --all
-- ip a show ens0s3
+- ip a show enp0s3
 
 ![vérifier adresse ip get](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/netplan-get.png)
 ![vérifier adresse ip ens0s3](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/netplan-enp0s3.png)
