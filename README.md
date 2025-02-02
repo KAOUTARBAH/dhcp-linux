@@ -70,9 +70,8 @@ sudo systemctl status isc-dhcp-server
 
 # Configuration et test du client windows 
 
+![conf-ip4-clt](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/conf-ip4-clt.png)    
 ![adressecltdhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/adressecltdhcp.png)    
-
-
 
 - Mettre en place une attribution statique pour une machine cliente particulière dont l'adresse MAC permet d'obtenir l'adresse 172.20.0.10
 
