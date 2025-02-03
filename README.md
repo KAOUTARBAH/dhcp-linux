@@ -71,11 +71,26 @@ sudo systemctl status isc-dhcp-server
 # Configuration et test du client windows 
 
 ![conf-ip4-clt](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/conf-ip4-clt.png)    
-![adressecltdhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/adressecltdhcp.png)    
+![adressecltdhcp](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/adressecltdhcp.png)   
+
+# Configuration et test du client LUNIX 
+    ip a show enp0s3
+![adressecltdhcp lunix](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/clt-lunix.png)
 
 - Mettre en place une attribution statique pour une machine cliente particulière dont l'adresse MAC permet d'obtenir l'adresse 172.20.0.10
+    Éditer le fichier /etc/dhcp/dhcpd.conf :
+![adresse statique](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/clt-statique.png)
+
+    Redémarrer le service DHCP :
+***sudo systemctl restart isc-dhcp-server***
+***sudo systemctl enable isc-dhcp-server***
+***sudo systemctl status isc-dhcp-server***
+![activer adresse statique](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/activerAdresseStatique.png)
 
 - Test la bon fonctionnement du serveur avec un client classique et le client devant avoir une adresse statique
+    ip a show enp0s3
+![test adresse statique](https://github.com/KAOUTARBAH/DHCP-LINUX/blob/main/images/adresse-statique.png)
+
 
 - Poste une procédure au format markdown permettant pas à pas d'obtenir cette configuration ainsi que les tests associés
 
